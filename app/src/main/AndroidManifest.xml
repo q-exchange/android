@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="top.biduo.exchange">
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-feature android:name="android.permission.camera"/>
+    <uses-feature android:name="android.hardware.autofocus"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <application
+        android:name="top.biduo.exchange.app.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/icon_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:enabled="true"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+        <!--Umeng-->
+        <!--<meta-data-->
+            <!--android:name="UMENG_APPKEY"-->
+            <!--android:value="" />-->
+
+        <activity
+            android:name="top.biduo.exchange.ui.main.MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name="top.biduo.exchange.ui.login.LoginActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="top.biduo.exchange.ui.common.LeadActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="top.biduo.exchange.ui.common.StartActivity"
+            android:configChanges="orientation|screenSize"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/launchTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="top.biduo.exchange.ui.kline.KlineActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="top.biduo.exchange.ui.signup.SignUpActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="top.biduo.exchange.ui.forgot_pwd.ForgotPwdActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="top.biduo.exchange.ui.myinfo.MyInfoActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="top.biduo.exchange.ui.wallet_detail.WalletDetailActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="top.biduo.exchange.ui.my_order.MyOrderActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="top.biduo.exchange.ui.my_ads.AdsActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="top.biduo.exchange.ui.message.MessageActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="top.biduo.exchange.ui.credit.CreditActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="top.biduo.exchange.ui.setting.SettingActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="top.biduo.exchange.ui.feed.FeedbackActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="top.biduo.exchange.ui.aboutus.AboutUsActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity android:name="top.biduo.exchange.ui.releaseAd.ReleaseAdsActivity" />
+        <activity android:name="top.biduo.exchange.ui.country.CountryActivity" />
+        <activity android:name="top.biduo.exchange.ui.account_pwd.AccountPwdActivity" />
+        <activity android:name="top.biduo.exchange.ui.buy_or_sell.C2CBuyOrSellActivity" />
+        <activity android:name="top.biduo.exchange.ui.recharge.RechargeActivity"
+            android:launchMode="singleTask"/>
+        <activity android:name="top.biduo.exchange.ui.extract.ExtractActivity"
+            android:launchMode="singleTask"/>
+        <activity android:name="top.biduo.exchange.ui.extract.AddressActivity" />
+        <activity android:name="top.biduo.exchange.ui.bind_phone.BindPhoneActivity" />
+        <activity android:name="top.biduo.exchange.ui.bind_email.BindEmailActivity" />
+        <activity android:name="top.biduo.exchange.ui.bind_email.EmailActivity" />
+        <activity android:name="top.biduo.exchange.ui.edit_login_pwd.EditLoginPwdActivity" />
+        <activity android:name="top.biduo.exchange.ui.bind_phone.PhoneActivity" />
+        <activity android:name="top.biduo.exchange.ui.change_phone.ChangePhoneActivity" />
+        <activity android:name="top.biduo.exchange.ui.change_phone.ChangeLeadActivity" />
+        <activity android:name="top.biduo.exchange.ui.message_detail.MessageDetailActivity"
+            android:hardwareAccelerated="false"/>
+        <activity android:name="top.biduo.exchange.ui.lock.LockActivity" />
+        <activity
+            android:name="top.biduo.exchange.ui.set_lock.SetLockActivity"
+            android:launchMode="singleTask" />
+        <activity android:name="top.biduo.exchange.ui.order_detail.OrderDetailActivity" />
+        <activity android:name="top.biduo.exchange.ui.appeal.AppealActivity" />
+        <activity android:name="top.biduo.exchange.ui.account_pwd.EditAccountPwdActivity" />
+        <activity android:name="top.biduo.exchange.ui.account_pwd.ResetAccountPwdActivity" />
+        <activity android:name="top.biduo.exchange.ui.chatlist.ChatListActivity" />
+        <activity android:name="top.biduo.exchange.ui.chat.ChatActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="stateVisible|adjustResize"
+            />
+        <activity android:name=".ui.entrust.TrustListActivity" />
+        <activity android:name="top.biduo.exchange.ui.entrust.TrustDetailActivity" />
+        <activity android:name="top.biduo.exchange.ui.bind_account.BindAccountActivity" />
+        <activity android:name="top.biduo.exchange.ui.bind_account.BindAliActivity" />
+        <activity android:name="top.biduo.exchange.ui.bind_account.BindBankActivity" />
+        <activity android:name="top.biduo.exchange.ui.bind_account.BindWeiChatActivity" />
+
+        <!--新加的-->
+        <activity android:name=".ui.aboutus.AboutJianJieActivity" />
+        <activity android:name=".ui.wallet.ChongBiJLActivity" />
+        <activity android:name=".ui.wallet.TiBiJLActivity" />
+        <activity android:name=".ui.setting.NoticeActivity" />
+        <activity android:name=".ui.setting.HelpActivity" />
+        <activity android:name=".ui.message_detail.MessageHelpActivity" />
+        <activity android:name=".ui.credit.CreditInfoActivity" />
+        <activity android:name=".ui.seller.SellerApplyActivity" />
+        <activity android:name=".ui.seller.SellerApplyCommitActivity" />
+        <activity android:name=".ui.aboutus.AddUrlActivity" />
+
+        <service android:name="top.biduo.exchange.serivce.MyService" />
+        <service android:name="top.biduo.exchange.serivce.MyBindService" />
+        <service android:name=".serivce.MyTextService" />
+
+
+        <activity android:name=".ui.servicefee.ServiceFeeActivity" />
+        <activity android:name=".ui.score_record.ScoreRecordActivity" />
+        <activity android:name=".ui.credit.VideoCreditActivity" />
+        <activity android:name=".ui.credit.VideoActivity" />
+        <activity android:name=".ui.score_record.CandyRecordActivity" />
+        <activity android:name=".ui.my_promotion.PromotionActivity" />
+        <activity android:name=".ui.message_detail.MessageHelpNewActivity" />
+        <activity android:name=".ui.asset_transfer.AssetTransferActivity" />
+        <activity android:name=".ui.ieo.IeoActivity" />
+        <activity android:name=".ui.ieo.IeoDetailActivity" />
+        <activity android:name=".ui.ieo.IeoOrderRecordActivity" />
+        <activity android:name=".ui.ieo.IeoOrderDetailActivity" />
+        <activity android:name=".ui.setting.LanguageActivity" />
+        <activity android:name=".ui.my_promotion.ShareImageActivity" />
+        <activity android:name=".ui.common.ChooseCoinActivity" />
+        <activity android:name=".ui.main.TestActivity" />
+        <activity android:name=".ui.fiat_exchange.FiatExchangeActivity" />
+        <activity android:name=".ui.setting.FeeSettingActivity" />
+
+
+    </application>
+
+</manifest>

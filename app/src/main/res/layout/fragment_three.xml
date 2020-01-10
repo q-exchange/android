@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp">
+
+        <LinearLayout
+            android:id="@+id/tb_transaction"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/shape_gray_line"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_title_exchange"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/selector_trade_title"
+                android:gravity="center"
+                android:text="@string/exchange"
+                android:textColor="@color/selector_radiobutton_text" />
+
+            <TextView
+                android:id="@+id/tv_title_margin"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:background="@drawable/selector_trade_title"
+                android:gravity="center"
+                android:text="@string/margin"
+                android:textColor="@color/selector_radiobutton_text" />
+
+            <TextView
+                android:id="@+id/tv_title_fiat"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/selector_trade_title"
+                android:gravity="center"
+                android:text="@string/fiat"
+                android:textColor="@color/selector_radiobutton_text" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_eeeeee" />
+
+
+
+
+    <android.support.v4.view.ViewPager
+        android:visibility="gone"
+        android:id="@+id/vp_transaction"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/primaryBackNormal" />
+
+    <FrameLayout
+        android:id="@+id/fl_container_trade"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>

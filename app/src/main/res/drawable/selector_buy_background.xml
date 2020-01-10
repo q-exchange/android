@@ -1,0 +1,5 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/exchange_buy_vertical" android:state_selected="false" />
+    <item android:drawable="@drawable/exchange_buy_vertical_light" android:state_selected="true" />
+
+</selector>

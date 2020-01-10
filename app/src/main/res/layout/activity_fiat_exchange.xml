@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llTitle"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/iv_back"
+            android:src="@drawable/h_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tb_fiat_title"
+            app:tabIndicatorHeight="0dp"
+            app:tabMode="scrollable"
+
+            app:tabTextColor="@color/primaryTextGray"
+            app:tabTextAppearance="@style/TabText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:visibility="invisible"
+            android:id="@+id/iv_filter_fiat_exchange"
+            android:src="@drawable/icon_filter"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+
+        <ImageView
+            android:id="@+id/iv_filter_fiat_order"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/icon_order"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+
+        <ImageView
+            android:id="@+id/iv_menu_fiat_order"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/trade_head_right_pop_normal"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+
+    </LinearLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tb_fiat_coin_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/primaryBackNormal"
+        app:tabBackground="@null"
+        app:tabIndicatorColor="@color/baseBlue"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="@color/baseBlue"
+        app:tabTextColor="@color/primaryText" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_fiat_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="1px"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+</LinearLayout>

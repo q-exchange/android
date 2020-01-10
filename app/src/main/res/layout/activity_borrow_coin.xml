@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/color_eeeeee"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!--标题-->
+    <LinearLayout
+        android:id="@+id/llTitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:background="@color/blue_main"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/ibBack"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:scaleType="center"
+            android:src="@drawable/icon_back"
+            android:visibility="visible" />
+
+        <View
+            android:id="@+id/view_back"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:text="@string/borrow_coin"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tv_save"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:minWidth="48dp"
+            android:text="@string/borrow_record"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_margin ="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <TextView
+            android:id="@+id/tv_borrow_coin_left"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/coin_borrow_back"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:id="@+id/tv_borrow_coin_right"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/coin_borrow_back"
+            android:layout_height="50dp" />
+
+    </LinearLayout>
+    
+
+    <LinearLayout
+        android:background="@color/white"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="13sp"
+                android:textColor="@color/color_999999"
+                android:text="@string/borrowedCoin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:gravity="right"
+                android:paddingRight="3dp"
+                android:textSize="13sp"
+                android:textColor="@color/color_999999"
+                android:id="@+id/tv_account_borrowed"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textSize="13sp"
+                android:textColor="@color/color_999999"
+                android:id="@+id/tv_coin_name0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="13sp"
+                android:textColor="@color/color_999999"
+                android:text="@string/max_borrow_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="13sp"
+                android:paddingRight="3dp"
+                android:gravity="right"
+                android:textColor="@color/color_999999"
+                android:id="@+id/tv_account_max"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textSize="13sp"
+                android:textColor="@color/color_999999"
+                android:id="@+id/tv_coin_name1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="13sp"
+                android:textColor="@color/color_999999"
+                android:text="@string/interest_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:gravity="right"
+                android:textSize="13sp"
+                android:textColor="@color/color_999999"
+                android:id="@+id/tv_account_rate"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/number"
+        android:textColor="@color/color_333333"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="8dp"
+        android:background="@drawable/circle_conner_rect_white_line"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <EditText
+            android:id="@+id/et_transfer_amount"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/borrow_amount_input"
+            android:textColor="@color/color_333333"
+            android:textColorHint="@color/primaryTextGray"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_coin_name2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="USDT"
+            android:textColor="@color/color_999999" />
+
+        <TextView
+            android:id="@+id/tv_borrow_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/all"
+            android:textColor="@color/blue_main" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_available_coin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/primaryTextGray"
+        android:textSize="12sp" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/tv_commit"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="@string/save"
+        android:textSize="16sp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/shape_c2c_tv_buy_yuan" />
+</LinearLayout>

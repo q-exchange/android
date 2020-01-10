@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <top.biduo.exchange.customview.MovieRecorderView
+        android:id="@+id/movie_record"
+        app:record_max_time="10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:gravity="center"
+        android:text="@string/long_press_video_recording"
+        android:textColor="@color/primaryBackLight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <top.biduo.exchange.customview.CircleButtonView
+        android:layout_width="80dp"
+        android:id="@+id/iv_start_record"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        app:minTime="1"
+        app:maxTime="10"
+        app:progressColor="@color/blue_main"
+        app:progressWidth="4dp"
+        android:layout_height="80dp" />
+
+    <ImageView
+        android:id="@+id/iv_change_camera"
+        android:src="@drawable/icon_change_camera"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:id="@+id/tv_random"
+        android:layout_marginTop="70dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/blue_main"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+
+
+</RelativeLayout>

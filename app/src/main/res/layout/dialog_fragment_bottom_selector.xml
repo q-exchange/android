@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="@color/color_eeeeee"
+    android:orientation="vertical">
+
+     <android.support.v7.widget.RecyclerView
+         android:id="@+id/rc_bottom_selector"
+         android:background="@color/color_eeeeee"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginTop="3dp"
+        android:text="@string/cancle"
+        android:id="@+id/tv_selection3"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:background="@color/white"
+        android:textColor="@color/primaryText"
+        android:textSize="18sp" />
+
+</LinearLayout>

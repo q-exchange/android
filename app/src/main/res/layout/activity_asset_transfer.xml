@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_eeeeee"
+    android:orientation="vertical">
+
+    <!--标题-->
+    <LinearLayout
+        android:id="@+id/llTitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:background="@color/blue_main"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/ibBack"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:scaleType="center"
+            android:src="@drawable/icon_back"
+            android:visibility="visible" />
+
+        <View
+            android:id="@+id/view_back"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:text="@string/transfer_asset"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tv_save"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:minWidth="48dp"
+            android:textColor="@color/text_orange"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="101dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/circle_conner_rect_white_line"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_from"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="7dp"
+            android:gravity="center"
+            android:text="@string/from"
+            android:textColor="@color/color_999999" />
+
+        <LinearLayout
+            android:layout_toLeftOf="@+id/iv_switch"
+            android:id="@+id/ll_transfer_from"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@+id/tv_from"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/exchange_asset"
+                android:textColor="@color/color_333333" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@+id/iv_switch"
+            android:background="@color/color_eeeeee" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="7dp"
+            android:gravity="center"
+            android:text="@string/to"
+            android:textColor="@color/color_999999" />
+
+        <LinearLayout
+            android:layout_toLeftOf="@+id/iv_switch"
+            android:id="@+id/ll_transfer_to"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/tv_from"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_asset_to"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/fiat_asset"
+                android:textColor="@color/color_333333" />
+
+
+
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/iv_switch"
+            android:paddingLeft="26dp"
+            android:paddingRight="26dp"
+            android:src="@drawable/icon_switch"
+            android:layout_alignParentRight="true"
+            android:layout_width="80dp"
+            android:layout_height="101dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/currency"
+        android:textColor="@color/color_333333" />
+
+    <LinearLayout
+        android:id="@+id/ll_select_coin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circle_conner_rect_white_line"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="8dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_coin_name0"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="USDT"
+            android:textColor="@color/color_333333"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/iv_more"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center_vertical"
+            android:rotation="270"
+            android:src="@mipmap/icon_downmoreimage" />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/transfer_amount"
+        android:textColor="@color/color_333333" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="4dp"
+        android:background="@drawable/circle_conner_rect_white_line"
+        android:paddingTop="10dp">
+
+        <EditText
+            android:id="@+id/et_transfer_amount"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/transfer_amount_input"
+            android:textColor="@color/color_333333"
+            android:textColorHint="@color/primaryTextGray"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_coin_name1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="USDT"
+            android:textColor="@color/primaryTextGray" />
+
+        <TextView
+            android:id="@+id/tv_transfer_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:text="@string/all"
+            android:textColor="@color/blue_main" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_available_coin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/color_999999"
+        android:textSize="12sp" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/tv_commit"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="@string/save"
+        android:textSize="16sp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/shape_c2c_tv_buy_yuan" />
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:gravity="center_vertical"
+        android:textColor="@color/color_333333"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:paddingLeft="13dp"
+        android:layout_marginTop="@dimen/dp1"
+        android:background="@color/white"
+        android:id="@+id/tv_coin_name_support"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+</LinearLayout>

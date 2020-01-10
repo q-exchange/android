@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="20dp"
+    android:background="@color/color_eeeeee"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/llMenu0"
+        android:background="@color/primaryBackNormal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:orientation="vertical">
+            <TextView
+                android:id="@+id/tvTakePhone"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:minWidth="90dp"
+                android:text="@string/to_buy"
+                android:textColor="@color/primaryText"
+                android:textSize="18sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="1dp"
+        android:background="@color/primaryBackNormal"
+        android:id="@+id/llMenu1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/tvAlbum"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minWidth="90dp"
+            android:text="@string/to_sell"
+            android:textColor="@color/primaryText"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="1dp"
+        android:background="@color/primaryBackNormal"
+        android:id="@+id/line_quxiao"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minWidth="90dp"
+            android:text="@string/cancle"
+            android:textColor="@color/primaryText"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

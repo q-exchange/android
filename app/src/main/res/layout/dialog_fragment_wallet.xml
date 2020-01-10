@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="@color/primaryBackNormal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_selection0"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textColor="@color/primaryText"
+        android:textSize="18sp" />
+
+    <View
+        android:id="@+id/line_0"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/primaryBackDark" />
+
+    <TextView
+        android:id="@+id/tv_selection1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textColor="@color/primaryText"
+        android:textSize="18sp" />
+
+    <View
+        android:id="@+id/line_1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/primaryBackDark" />
+
+    <TextView
+        android:id="@+id/tv_selection2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textColor="@color/primaryText"
+        android:textSize="18sp" />
+
+    <View
+        android:id="@+id/line_2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/primaryBackDark" />
+
+    <TextView
+        android:text="@string/cancle"
+        android:id="@+id/tv_selection3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textColor="@color/primaryText"
+        android:textSize="18sp" />
+
+</LinearLayout>
